@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useAppContext } from '../context/AppContext';
 import { categories } from '../assets/assets';
-import ProductCard from '../components/productCard';
+import ProductCard from '../components/ProductCard';
 
 const ProductCategory = () => {
     const {category}=useParams();
