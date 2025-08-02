@@ -35,7 +35,7 @@ const Cart = () => {
                
             }
             else{
-                toast.error(data.message);
+                toast.success("Add Address");
             }
         }
         } catch (error) {
