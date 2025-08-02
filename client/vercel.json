@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/api/v1/:path*",
-        "destination": "https://freshroots-backend.vercel.app/api/:path*"
+        "destination": "https://freshroots-backend.vercel.app/:path*"
       },
       {
         "source": "/(.*)",
