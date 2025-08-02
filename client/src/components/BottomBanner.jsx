@@ -1,7 +1,7 @@
 import React from 'react'
 import { assets, features } from '../assets/assets'
 
-const bottomBanner = () => {
+const BottomBanner = () => {
   return (
     <div className='relative mt-24'>
       <img src={assets.bottom_banner_image} className='w-full hidden md:block' alt='banner' />
@@ -25,4 +25,4 @@ const bottomBanner = () => {
   )
 }
 
-export default bottomBanner
+export default BottomBanner

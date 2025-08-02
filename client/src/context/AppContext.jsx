@@ -5,7 +5,8 @@ import { toast } from "react-hot-toast";
 import axios from 'axios';
 
 axios.defaults.withCredentials=true;
-axios.defaults.baseURL=import.meta.env.VITE_BACKEND_URL;
+axios.defaults.baseURL="/api/v1"
+//import.meta.env.VITE_BACKEND_URL;
 
 export const AppContext =createContext();
 export const AppContextProvider = ({children}) =>{
