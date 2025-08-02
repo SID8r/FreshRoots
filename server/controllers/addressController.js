@@ -20,7 +20,6 @@ export const getAddress=async(req,res)=>{
     try {
         const userId=req.userId;
         const addresses=await Address.find({userId});
-        console.log(addresses);
         res.json({success:true,addresses});
     } catch (error) {
         console.log(error.message);

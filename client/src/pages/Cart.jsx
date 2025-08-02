@@ -27,15 +27,11 @@ const Cart = () => {
     const getAddress=async()=>{
         try {
             const {data}=await axios.get('/api/address/get');
-             console.log(data);
         if(data.success){
             setAddress(data.addresses);
             if(data.addresses.length>0){
                 setSelectedAddress(data.addresses[0]);
                
-            }
-            else{
-                toast.success("Add Address");
             }
         }
         } catch (error) {
